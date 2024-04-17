@@ -5,4 +5,5 @@
 
   tasks:
     - name: Get facts for current logged in user
+      delegate_to: localhost
       azure.azcollection.azure_rm_account_info:
